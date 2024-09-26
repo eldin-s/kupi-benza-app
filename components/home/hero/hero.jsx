@@ -1,12 +1,17 @@
-import { StyleSheet, Text, View } from "react-native";
+import { ScrollView } from "react-native";
 import React from "react";
 import SearchCard from "./search-card";
+import { SafeAreaView } from "react-native-safe-area-context";
+import Slider from "./slider";
 
 const Hero = () => {
   return (
-    <View>
-      <SearchCard />
-    </View>
+    <SafeAreaView>
+      <ScrollView>
+        <SearchCard />
+        <Slider />
+      </ScrollView>
+    </SafeAreaView>
   );
 };
 
