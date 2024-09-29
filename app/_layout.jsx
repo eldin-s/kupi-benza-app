@@ -25,6 +25,7 @@ const RootLayout = () => {
     <Stack>
       {/* Using a Stack for global pages like auth */}
       <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+      <Stack.Screen name="(auth)" options={{ headerShown: false }} />
     </Stack>
   );
 };
